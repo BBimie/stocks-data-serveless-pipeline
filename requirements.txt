@@ -1,0 +1,4 @@
+massive==2.2.0
+python-dotenv==1.2.1
+pycopg2-binary
+requests==2.32.5
