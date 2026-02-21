@@ -22,7 +22,9 @@ I needed the following resources
 - Configure AWS `aws configure`
 - Terraform zips the lambda function script and the massiv-python-client layer and uploads
 
-
+# LAMBDA FUNCTION DETAILS
+1. Uses two layers - the customer massive-api-client layer, and the aws default python layer (3.11 runtime)
+2. Is triggered by event bridge and writes the data into s3 data lake
 
 Pipeline:
 
@@ -46,4 +48,4 @@ Pipeline:
 3. CD to the terraform dir and run `terraform init`
 4. Run `terraform plan`
 5. `terraform apply`
-6. Manually update the api_key secret on the console 
+6. Manually update the api_key secret on the console
